@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 body {
     margin: 0;
 }
@@ -12,7 +16,7 @@ header {
 
 .header {
     height: 30px;
-    background-color: #abc021;
+    background-color: #000;
 }
 
 .slider {
@@ -32,4 +36,26 @@ header {
     height: inherit;
     background-position: center;
     background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-shadow: 1px 3px 2px #333;
+    font-size: 50px;
+}
+
+.slider--controls {
+    position: absolute;
+    z-index: 99;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.slider--control {
+    width: 50px;
+    height: 100px;
+    overflow: hidden;
+    cursor: pointer;
 }
